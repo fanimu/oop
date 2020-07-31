@@ -1,19 +1,25 @@
 <?php
+require 'animal.php';
+require 'frog.php';
+require 'ape.php';
 
 
 $sheep = new Animal("shaun");
 
-echo $sheep->name; // "shaun"
-echo $sheep->legs; // 2
-echo $sheep->cold_blooded // false
+echo $sheep->getName(). "<br>"; // "shaun"
+echo $sheep->getLegs(). "<br>"; // 2
+echo $sheep->getCold_Blooded(); // false
 
 // NB: Boleh juga menggunakan method get (get_name(), get_legs(), get_cold_blooded())
 
+echo "<br> <br>";
 
-// index.php
+//index.php
 $sungokong = new Ape("kera sakti");
-$sungokong->yell() // "Auooo"
+echo $sungokong->yell(); // "Auooo"
+
+echo "<br>";
 
 $kodok = new Frog("buduk");
-$kodok->jump() ; // "hop hop"
+echo $kodok->jump() ; // "hop hop"
 ?>
